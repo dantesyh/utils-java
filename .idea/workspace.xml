@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="77ea8d5b-82d5-41d8-bdf1-38ebdbc46ed1" name="更改" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/dantesyh/utils/JsonUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/dantesyh/utils/NetworkUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/dantesyh/utils/RandomUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/dantesyh/utils/SecureUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/dantesyh/utils/TimeUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/logback.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/dantesyh/utils/JsonUtilsTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/dantesyh/utils/NetworkUtilsTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/dantesyh/utils/RandomUtilsTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/dantesyh/utils/SecureUtilsTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/dantesyh/utils/TimeUtilsTest.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+        <option value="JUnit5 Test Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 7
+}]]></component>
+  <component name="ProjectId" id="2UjeQtPpvJMjn2BZpEd9yE3tUJh" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
+    "git-widget-placeholder": "master",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "project.structure.last.edited": "模块",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="dantesyh.utils" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.NetworkUtilsTest.testClientIP">
+    <configuration name="JsonUtilsTest.testJson" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="utils-java" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="dantesyh.utils.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="dantesyh.utils" />
+      <option name="MAIN_CLASS_NAME" value="dantesyh.utils.JsonUtilsTest" />
+      <option name="METHOD_NAME" value="testJson" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="NetworkUtilsTest.testClientIP" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="utils-java" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="dantesyh.utils.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="dantesyh.utils" />
+      <option name="MAIN_CLASS_NAME" value="dantesyh.utils.NetworkUtilsTest" />
+      <option name="METHOD_NAME" value="testClientIP" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="NetworkUtilsTest.testLocalIP" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="utils-java" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="dantesyh.utils.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="dantesyh.utils" />
+      <option name="MAIN_CLASS_NAME" value="dantesyh.utils.NetworkUtilsTest" />
+      <option name="METHOD_NAME" value="testLocalIP" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="NetworkUtilsTest.testLocalIp" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="utils-java" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="dantesyh.utils.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="dantesyh.utils" />
+      <option name="MAIN_CLASS_NAME" value="dantesyh.utils.NetworkUtilsTest" />
+      <option name="METHOD_NAME" value="testLocalIp" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RandomUtilsTest.testGenerator" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="utils-java" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="dantesyh.utils.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="dantesyh.utils" />
+      <option name="MAIN_CLASS_NAME" value="dantesyh.utils.RandomUtilsTest" />
+      <option name="METHOD_NAME" value="testGenerator" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.NetworkUtilsTest.testClientIP" />
+        <item itemvalue="JUnit.NetworkUtilsTest.testLocalIP" />
+        <item itemvalue="JUnit.NetworkUtilsTest.testLocalIp" />
+        <item itemvalue="JUnit.JsonUtilsTest.testJson" />
+        <item itemvalue="JUnit.RandomUtilsTest.testGenerator" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="应用程序级" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="默认任务">
+      <changelist id="77ea8d5b-82d5-41d8-bdf1-38ebdbc46ed1" name="更改" comment="" />
+      <created>1693457404809</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1693457404809</updated>
+      <workItem from="1693457405857" duration="9114000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/utils_java$SecureUtilsTest.ic" NAME="SecureUtilsTest 覆盖结果" MODIFIED="1693464849164" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>dantesyh.utils.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/utils_java$RandomUtilsTest_testGenerator.ic" NAME="RandomUtilsTest.testGenerator 覆盖结果" MODIFIED="1693464963783" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>dantesyh.utils.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/utils_java$SecureUtilsTest_testRSA.ic" NAME="SecureUtilsTest.testRSA 覆盖结果" MODIFIED="1693464812731" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>dantesyh.utils.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/utils_java$TimeUtilsTest.ic" NAME="TimeUtilsTest 覆盖结果" MODIFIED="1693464860757" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>dantesyh.utils.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/utils_java$SecureUtilsTest_testAES.ic" NAME="SecureUtilsTest.testAES 覆盖结果" MODIFIED="1693464829784" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>dantesyh.utils.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/utils_java$JsonUtilsTest_testJson.ic" NAME="JsonUtilsTest.testJson 覆盖结果" MODIFIED="1693465183721" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>dantesyh.utils.*</FILTER>
+    </SUITE>
+  </component>
+</project>
