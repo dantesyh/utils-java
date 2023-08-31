@@ -1,20 +1,19 @@
 package dantesyh.utils;
 
 import org.junit.jupiter.api.Test;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 
 import java.text.ParseException;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.time.LocalTime;
 import java.util.Date;
+import java.util.logging.Logger;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 class TimeUtilsTest {
 
-    private static final Logger logger = LoggerFactory.getLogger(TimeUtils.class);
+    private static final Logger logger = Logger.getLogger(TimeUtils.class.getName());
 
     @Test
     void testConvertDateTimeFormatString() throws ParseException {
@@ -31,13 +30,13 @@ class TimeUtilsTest {
     @Test
     void testConvertDateTimeFormatDate() {
         Date inputTime = new Date(); // 使用当前时间
-        logger.debug(String.valueOf(inputTime));
+        logger.info(String.valueOf(inputTime));
 
         String expectedResult = TimeUtils.convertDateTimeFormat(inputTime, TimeUtils.DATE_TIME_FORMAT);
-        logger.debug(expectedResult);
+        logger.info(expectedResult);
 
         String actualResult = TimeUtils.convertDateTimeFormat(inputTime);
-        logger.debug(actualResult);
+        logger.info(actualResult);
 
         assertEquals(expectedResult, actualResult);
     }
@@ -45,13 +44,13 @@ class TimeUtilsTest {
     @Test
     void testConvertDateTimeFormatLocalDateTime() {
         LocalDateTime inputTime = LocalDateTime.now(); // 使用当前时间
-        logger.debug(String.valueOf(inputTime));
+        logger.info(String.valueOf(inputTime));
 
         String expectedResult = TimeUtils.convertDateTimeFormat(inputTime, TimeUtils.DATE_TIME_FORMAT);
-        logger.debug(expectedResult);
+        logger.info(expectedResult);
 
         String actualResult = TimeUtils.convertDateTimeFormat(inputTime);
-        logger.debug(actualResult);
+        logger.info(actualResult);
 
         assertEquals(expectedResult, actualResult);
     }
@@ -59,26 +58,26 @@ class TimeUtilsTest {
     @Test
     void testConvertDateFormatLocalDate() {
         LocalDate inputTime = LocalDate.now(); // 使用当前日期
-        logger.debug(String.valueOf(inputTime));
+        logger.info(String.valueOf(inputTime));
 
         String expectedResult = TimeUtils.convertDateFormat(inputTime, TimeUtils.DATE_FORMAT);
-        logger.debug(expectedResult);
+        logger.info(expectedResult);
 
         String actualResult = TimeUtils.convertDateFormat(inputTime);
-        logger.debug(actualResult);
+        logger.info(actualResult);
         assertEquals(expectedResult, actualResult);
     }
 
     @Test
     void testConvertTimeFormatLocalTime() {
         LocalTime inputTime = LocalTime.now(); // 使用当前时间
-        logger.debug(String.valueOf(inputTime));
+        logger.info(String.valueOf(inputTime));
 
         String expectedResult = TimeUtils.convertTimeFormat(inputTime, TimeUtils.TIME_FORMAT);
-        logger.debug(expectedResult);
+        logger.info(expectedResult);
 
         String actualResult = TimeUtils.convertTimeFormat(inputTime);
-        logger.debug(actualResult);
+        logger.info(actualResult);
         assertEquals(expectedResult, actualResult);
     }
 }

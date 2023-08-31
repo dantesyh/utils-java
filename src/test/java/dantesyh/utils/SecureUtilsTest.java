@@ -1,8 +1,6 @@
 package dantesyh.utils;
 
 import org.junit.jupiter.api.Test;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 
 import javax.crypto.BadPaddingException;
 import javax.crypto.IllegalBlockSizeException;
@@ -12,28 +10,30 @@ import java.security.NoSuchAlgorithmException;
 import java.security.SignatureException;
 import java.security.spec.InvalidKeySpecException;
 import java.util.Map;
+import java.util.logging.Logger;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 
 /**
  * @author dante
  * @since 2023/8/31
  */
 class SecureUtilsTest {
-    private static final Logger logger = LoggerFactory.getLogger(SecureUtils.class);
+    private static final Logger logger = Logger.getLogger(SecureUtils.class.getName());
 
     @Test
     void testAES() throws NoSuchPaddingException, IllegalBlockSizeException, NoSuchAlgorithmException, BadPaddingException, InvalidKeyException {
         String secretKey = "myseckeyeyhds";
         String originalText = "Hello, AES Encryption!";
 
-        logger.debug("Original Text: " + originalText);
+        logger.info("Original Text: " + originalText);
 
         String encryptedText = SecureUtils.encryptAES(originalText, secretKey);
-        logger.debug("Encrypted Text: " + encryptedText);
+        logger.info("Encrypted Text: " + encryptedText);
 
         String decryptedText = SecureUtils.decryptAES(encryptedText, secretKey);
-        logger.debug("Decrypted Text: " + decryptedText);
+        logger.info("Decrypted Text: " + decryptedText);
 
         assertEquals(originalText, decryptedText);
     }
@@ -45,19 +45,19 @@ class SecureUtilsTest {
         String privateKey = keyPair.get(SecureUtils.PRIVATE_KEY);
 
         String originalText = "Hello, RSA!";
-        logger.debug("Original Text: " + originalText);
+        logger.info("Original Text: " + originalText);
 
         String encryptedText = SecureUtils.encryptRSA(originalText, publicKey);
-        logger.debug("Encrypted Text: " + encryptedText);
+        logger.info("Encrypted Text: " + encryptedText);
 
         String decryptedText = SecureUtils.decryptRSA(encryptedText, privateKey);
-        logger.debug("Decrypted Text: " + decryptedText);
+        logger.info("Decrypted Text: " + decryptedText);
 
         String signature = SecureUtils.signRSA(originalText, privateKey);
-        logger.debug("Signature: " + signature);
+        logger.info("Signature: " + signature);
 
         boolean isVerified = SecureUtils.verifyRSA(originalText, publicKey, signature);
-        logger.debug("Signature Verification: " + isVerified);
+        logger.info("Signature Verification: " + isVerified);
 
         assertEquals(decryptedText, originalText);
         assertTrue(isVerified);

@@ -1,8 +1,8 @@
 package dantesyh.utils;
 
 import org.junit.jupiter.api.Test;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
+
+import java.util.logging.Logger;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
@@ -11,7 +11,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
  * @since 2023/8/31
  */
 class JsonUtilsTest {
-    private static final Logger logger = LoggerFactory.getLogger(SecureUtils.class);
+    private static final Logger logger = Logger.getLogger(SecureUtils.class.getName());
 
     record Person(String name, int age) {
     }
@@ -20,10 +20,10 @@ class JsonUtilsTest {
     void testJson() {
         Person person = new Person("John", 30);
         String json = JsonUtils.toJson(person);
-        logger.debug("JSON: " + json);
+        logger.info("JSON: " + json);
 
         Person parsedPerson = JsonUtils.fromJson(json, Person.class);
-        logger.debug("Parsed Person: " + parsedPerson);
+        logger.info("Parsed Person: " + parsedPerson);
 
         assertEquals(person, parsedPerson);
     }
