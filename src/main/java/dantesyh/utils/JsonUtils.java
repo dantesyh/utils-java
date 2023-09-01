@@ -2,6 +2,11 @@ package dantesyh.utils;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
+import com.google.gson.reflect.TypeToken;
+
+import java.lang.reflect.Array;
+import java.lang.reflect.Type;
+import java.util.List;
 
 /**
  * JSON 工具类
@@ -22,4 +27,22 @@ public class JsonUtils {
     public static String toJson(Object object) {
         return gson.toJson(object);
     }
+
+    public static <T> T[] fromJsonArray(String json, Class<T[]> arrayClazz) {
+        return gson.fromJson(json, arrayClazz);
+    }
+
+    public static <T> List<T> fromJsonList(String json, Class<T> clazz) {
+        Type listType = TypeToken.getParameterized(List.class, clazz).getType();
+        return gson.fromJson(json, listType);
+    }
+
+    public static <T> T fromJson(String json, Type type) {
+        return gson.fromJson(json, type);
+    }
+
+    public static <T> T fromJson(String json, TypeToken<T> typeToken) {
+        return gson.fromJson(json, typeToken.getType());
+    }
+
 }
