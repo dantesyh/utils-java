@@ -23,7 +23,7 @@ class NetworkUtilsTest {
     }
 
     @Test
-    void testClientIP(){
+    void testClientIP() {
         MockHttpServletRequest request = new MockHttpServletRequest();
         request.addHeader("X-Forwarded-For", "1.2.3.4");
         request.addHeader("Proxy-Client-IP", "5.6.7.8");

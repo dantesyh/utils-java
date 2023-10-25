@@ -38,6 +38,9 @@ class TimeUtilsTest {
         String actualResult = TimeUtils.convertDateTimeFormat(inputTime);
         logger.info(actualResult);
 
+        String actualResult2 = TimeUtils.convertDateFormat(inputTime);
+        logger.info(actualResult2);
+
         assertEquals(expectedResult, actualResult);
     }
 
@@ -80,4 +83,5 @@ class TimeUtilsTest {
         logger.info(actualResult);
         assertEquals(expectedResult, actualResult);
     }
+
 }
