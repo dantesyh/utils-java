@@ -12,8 +12,7 @@ import java.security.spec.InvalidKeySpecException;
 import java.util.Map;
 import java.util.logging.Logger;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.junit.jupiter.api.Assertions.assertTrue;
+import static org.junit.jupiter.api.Assertions.*;
 
 /**
  * @author dante
@@ -61,5 +60,21 @@ class SecureUtilsTest {
 
         assertEquals(decryptedText, originalText);
         assertTrue(isVerified);
+    }
+
+    @Test
+    void maskPhoneNumber() {
+        String phone = "18806608995";
+        String masked = SecureUtils.maskPhoneNumber(phone);
+        assertNotEquals(phone, masked);
+        logger.info(masked);
+    }
+
+    @Test
+    void maskEmail() {
+        String email = "dantesyh123@gmail.com";
+        String masked = SecureUtils.maskEmail(email);
+        assertNotEquals(email, masked);
+        logger.info(masked);
     }
 }

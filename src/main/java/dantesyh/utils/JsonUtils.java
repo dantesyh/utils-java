@@ -56,20 +56,6 @@ public class JsonUtils {
     }
 
     /**
-     * 将JSON字符串转换为指定类型的数组。
-     *
-     * @param json       JSON字符串
-     * @param arrayClazz 目标数组的Class对象
-     * @param <T>        目标数组元素的类型
-     * @return 转换后的数组
-     * @deprecated 使用 {@link #fromJson(String, Class)} 方法代替
-     */
-    @Deprecated
-    public static <T> T[] fromJsonArray(String json, Class<T[]> arrayClazz) {
-        return gson.fromJson(json, arrayClazz);
-    }
-
-    /**
      * 将JSON字符串转换为包含指定类型元素的List。
      *
      * @param json  JSON字符串

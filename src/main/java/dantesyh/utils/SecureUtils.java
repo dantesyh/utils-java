@@ -372,4 +372,42 @@ public class SecureUtils {
     public static boolean verifyRSA(String data, String publicKey, String sign) throws NoSuchAlgorithmException, InvalidKeyException, SignatureException, InvalidKeySpecException {
         return verifyRSA(data.getBytes(StandardCharsets.UTF_8), getPublicKeyFromString(publicKey), sign);
     }
+
+
+    /**
+     * 手机号脱敏
+     *
+     * @param phoneNumber 手机号
+     * @return 脱敏手机号
+     */
+    public static String maskPhoneNumber(String phoneNumber) {
+        // 保留前3位和最后4位数字，中间使用星号替代
+        if (phoneNumber != null) {
+            return phoneNumber.replaceAll("(\\d{3})\\d*(\\d{4})", "$1****$2");
+        }
+        return null;
+    }
+
+    /**
+     * 邮箱脱敏
+     *
+     * @param email 邮箱
+     * @return 脱敏后邮箱
+     */
+    public static String maskEmail(String email) {
+        // 保留邮箱用户名的第一个字符，中间使用星号替代
+        if (email != null) {
+            String[] parts = email.split("@");
+            if (parts.length == 2) {
+                String username = parts[0];
+                String domain = parts[1];
+                if (username.length() > 1) {
+                    username = username.charAt(0) + "****";
+                }
+                return username + "@" + domain;
+            }
+            return email;
+        }
+        return null;
+    }
 }
