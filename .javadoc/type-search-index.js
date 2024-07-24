@@ -1,1 +1,0 @@
-typeSearchIndex = [{"l":"All Classes and Interfaces","u":"allclasses-index.html"},{"p":"dantesyh.utils","l":"ImageUtils"},{"p":"dantesyh.utils","l":"JsonUtils"},{"p":"dantesyh.utils","l":"NetworkUtils"},{"p":"dantesyh.utils","l":"RandomUtils"},{"p":"dantesyh.utils","l":"SecureUtils"},{"p":"dantesyh.utils","l":"TimeUtils"}];updateSearchResults();
